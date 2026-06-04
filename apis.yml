@@ -1,0 +1,57 @@
+aid: energydata-info
+name: ENERGYDATA.info
+description: >-
+  ENERGYDATA.info is a organization open-data portal running CKAN.
+  It exposes the CKAN catalog API, a standardized machine-readable interface over approximately 1,190 datasets,
+  supporting programmatic dataset search, metadata retrieval, and resource access. Because it runs CKAN, it shares a
+  consistent API surface with every other CKAN portal, making it uniformly harvestable and integrable.
+kind: organization
+image: https://kinlane-productions.s3.amazonaws.com/apis-json/apis-json-logo.jpg
+url: https://raw.githubusercontent.com/api-evangelist/energydata-info/refs/heads/main/apis.yml
+tags:
+  - Open Data
+  - CKAN
+  - Data Catalog
+  - DCAT
+  - Organization
+  - Global
+created: '2026-06-04'
+modified: '2026-06-04'
+specificationVersion: '0.19'
+apis:
+  - aid: energydata-info:catalog
+    name: ENERGYDATA.info CKAN Action API
+    description: >-
+      CKAN Action API for ENERGYDATA.info, a consistent JSON-over-HTTP interface over a catalog of 1,190 datasets. Standard actions include package_search, package_show, package_list, organization_list, group_list, tag_list, and resource_search; datastore_search is available where the DataStore extension is enabled. Base URL https://energydata.info/api/3/action/.
+    humanURL: https://energydata.info
+    baseURL: https://energydata.info/api/3/action
+    tags:
+      - CKAN
+      - Action API
+      - Open Data
+      - Catalog
+      - REST
+      - JSON
+    properties:
+      - type: Documentation
+        url: https://docs.ckan.org/en/latest/api/
+      - type: Website
+        url: https://energydata.info
+      - type: x-api-endpoint
+        url: https://energydata.info/api/3/action/status_show
+common:
+  - type: Website
+    url: https://energydata.info
+  - type: Documentation
+    url: https://docs.ckan.org/en/latest/api/
+  - type: Plans
+    url: plans/energydata-info-plans-pricing.yml
+  - type: RateLimits
+    url: rate-limits/energydata-info-rate-limits.yml
+  - type: FinOps
+    url: finops/energydata-info-finops.yml
+  - type: Review
+    url: review.yml
+maintainers:
+  - FN: Kin Lane
+    email: kin@apievangelist.com
